@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="tic-tac-toe.css">
+        <title>
+            Tic-Tac-Toe
+        </title>
+    </head>
+        <body>
+            <div class="game">
+                <img src="photos/restart.png" class="restart js-restart">
+                <div class="game-board">
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                    <div class="tile js-tile"></div>
+                </div>
+                <div class="difficulty-box">
+                    <p>Chose game difficulty: </p>
+                    <select class="difficulty" id="js-difficulty">
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="MiniMax">Impossible</option>
+                    </select>
+                </div>
+            </div>
+            
+                <div class="result js-result">_</div>
+                
+                <div class="scores js-score">
+                    <div class="wins">Wins</div>
+                    <div class="ties">Draws</div>
+                    <div class="loses">Loses</div>
+                    <div class = "js-wins wins"></div>
+                    <div class = "js-ties ties"></div>
+                    <div class = "js-loses loses"></div>
+                </div>
+
+             <script type="module" src="js/tic-tac-toe.js"></script>
+             <script type="module" src="js/ai.js"></script>
+        </body>
+
+</html>
